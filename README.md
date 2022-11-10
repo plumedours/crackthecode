@@ -1,5 +1,5 @@
 # Crack The Code
-Une sorte de Mastermind, en chiffre, et bien plus dur... ^^'
+Une sorte de Mastermind, en chiffre, et bien plus dur... ^^' (car un code aléatoire entre 1000 et 9999 est généré...)
 
 Réalisé avec JavaScript vanilla, et pour le CSS j'ai utilisé TailwindCSS.
 
