@@ -1,0 +1,23 @@
+{
+  "name": "015---crakccode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i input.css -o ./dist/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgthms/bulma-start.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgthms/bulma-start/issues"
+  },
+  "homepage": "https://github.com/jgthms/bulma-start#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  }
+}

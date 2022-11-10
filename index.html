@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Crack The Code</title>
+  </head>
+  <body>
+    <div class="flex flex-col w-full h-screen bg-slate-200">
+      <header class="flex bg-slate-600 justify-center">
+        <h1 class="text-white text-4xl font-bold p-3">Crack The Code</h1>
+      </header>
+      <div
+        class="flex flex-row justify-around w-9/12 self-center rounded border-white bg-white shadow-xl"
+      >
+        <p class="font-bold">
+          Meilleur score : <span id="highscoreLbl">0</span>
+        </p>
+        <p>Nombre de tentative : <span id="tryLbl">0</span></p>
+      </div>
+      <div class="flex flex-col flex-auto">
+        <div class="flex flex-col justify-start h-full items-center">
+          <p
+            id="secretCode"
+            class="border-2 rounded border-white bg-white my-5 p-1 px-5 shadow-xl tracking-widest text-2xl font-bold"
+          >
+            X X X X
+          </p>
+          <div
+            class="flex flex-col rounded p-2 overflow-auto h-32 w-9/12 mb-5 bg-white border-white shadow-xl"
+          >
+            <div id="tryList" class="flex flex-col-reverse"></div>
+          </div>
+        </div>
+        <div class="flex flex-col w-64 self-center justify-center">
+          <p
+            id="playerCode"
+            class="border-2 rounded border-white bg-white shadow-xl p-1 px-5 mb-4 tracking-widest text-xl font-bold self-center"
+          >
+            _ _ _ _
+          </p>
+          <div class="flex flex-row flex-wrap justify-center">
+            <button class="padBtn">0</button>
+            <button class="padBtn">1</button>
+            <button class="padBtn">2</button>
+            <button class="padBtn">3</button>
+            <button class="padBtn">4</button>
+          </div>
+          <div class="flex flex-row flex-wrap justify-center">
+            <button class="padBtn">5</button>
+            <button class="padBtn">6</button>
+            <button class="padBtn">7</button>
+            <button class="padBtn">8</button>
+            <button class="padBtn">9</button>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center h-full">
+          <button
+            id="checkBtn"
+            class="checkBtn bg-gray-600 text-white text-4xl rounded-md mt-5 py-3 px-5 shadow-xl shadow-gray-600"
+          >
+            CHECK
+          </button>
+          <button
+            id="startBtn"
+            class="checkBtn bg-gray-600 text-white text-xs rounded-md mt-5 py-3 px-5 shadow-xl shadow-gray-600"
+          >
+            NEW GAME
+          </button>
+          <button id="resetHS" class="text-red-700 text-sm mt-3">
+            Réinitialiser le score
+          </button>
+        </div>
+      </div>
+      <footer class="flex flex-row-reverse h-8 bg-slate-600">
+        <p class="text-white text-sm self-center px-5">
+          Maxime Bory - <a href="http://www.plumedours.fr">www.plumedours.fr</a>
+        </p>
+      </footer>
+    </div>
+    <div class="modal-container">
+      <div class="overlay"></div>
+      <div class="modal">
+        <p class="winOrLoseLabel infos-text">
+          Félicitation ! Vous avez trouvé le code !
+        </p>
+        <p class="wordResponse infos-text">Response</p>
+        <button id="replayBtn" class="modal-trigger btn btn-primary">
+          REJOUER
+        </button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
