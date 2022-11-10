@@ -1,6 +1,8 @@
 # Crack The Code
 Une sorte de Mastermind, en chiffre, et bien plus dur... ^^'
 
+Réalisé avec JavaScript vanilla, et pour le CSS j'ai utilisé TailwindCSS.
+
 N'hésitez pas à me proposer des choses à rajouter.
 
 Idée à rajouter :
